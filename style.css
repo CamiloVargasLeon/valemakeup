@@ -33,15 +33,17 @@ ul li h3{font-size: 18px;
 	background-color: #77459D;
 }
 .logotipo {
-	position: absolute;
+	position: fixed;
 	z-index: 31;
 	height: 120px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	top:0px;
 	left: 30px;
 	display: block;
 }
 /*seccion menuG */
-.menuG ul,.menuG li{
+/*
+.menuG ul,.menuG li, {
 	margin: 0;
 	padding:0;
 }
@@ -58,7 +60,8 @@ ul li h3{font-size: 18px;
 	float: right;
 	position: relative;
 }
-.menuG a{
+*/
+.menuG a,#menu-movil a{
 	color:#EEDAEF;
 	display: block;
 	margin: 0;
@@ -68,7 +71,7 @@ ul li h3{font-size: 18px;
 	font-family: 'Abel', sans-serif;
 }
 
-.menuG li:hover a{
+.menuG li:hover a, #menu-movil li:hover a{
 	background:url(titulos/pinceladab.svg)no-repeat  center;
 	background-origin: content-box;
 	background-size: 110px;
@@ -80,27 +83,55 @@ ul li h3{font-size: 18px;
 	background-size: 110px;
 	color:#333366;
 }
+
 #submenu{
-	position: absolute;
+	position: relative;
 	top:0;
 	left: 0;
+	width: 100%;
 	display: none;
-	float: left;
 }
-li:hover #submenu{
-	display: block;
-	top:60px;
-}
+
 #submenu li{
 	float: none;
 	width: 100%;
 }
-#submenu a:hover{
+#submenu a:hover, #submenu-movil a:hover{
 	background:#EEDAEF;
 }
-#submenu a{
+#submenu a, #submenu-movil a{
 	background:grey;
+} /**/
+/*seccion menumovil */
+.fa-bars{
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 40px;
+	color:#EEDAEF;
+	margin: 10px;
 }
+#menu-movil{
+	position: relative;
+	right: 0;
+	
+}
+#menu-movil ul, #menu-movil li{
+	margin: 0;
+	padding: 0;
+}
+#menu-movil ul{
+	list-style: none;
+	position: absolute;
+	right: 0;
+	top: 60px;
+} 
+#menu-movil li{
+	width: 30vw;
+	position: relative;
+	background: #77459D;
+}
+
 /*seccion home */
 #home div img{
 	width: 100%;
@@ -112,11 +143,11 @@ li:hover #submenu{
 .vint{
 	position: relative;
 	width: 100%;
-
 }
 .vintage{
 	position: absolute;
 	top:0vw;
+	width: 100%;
 	box-sizing: border-box;
 	opacity: 1;
 	transition: .9s ease;
@@ -166,12 +197,10 @@ li:hover #submenu{
 .vera1{background:  #FFC6D7;} .vera2{background:  #9BC9FB;} .vera3{background:  #B4FCE6;} .vera4{background:  #B4FCE6;}
 .oto1{background:  #6FFFDE;} .oto2{background:  #FBCB21;} .oto3{background:  #FCA33A;} .oto4{background:  #B4FCE6;}
 .inv1{background:  #EB1450;} .inv2{background:  #0818C3;} .inv3{background:  #02875C;} .inv4{background:  #B4FCE6;}
-
 .pr1l{background:  #F68283;} .pr2l{background:  #DA3F3A;} .pr3l{background:  #8C3D7A;} .pr4l{background: #91BFB4;}
 .vera1l{background:  #E8C285;} .vera2l{background:  #FF918D;} .vera3l{background: #FFC89F;} .vera4l{background:  #FFE393;}
 .oto1l{background:  #BA4947;} .oto2l{background:  #E88251;} .oto3l{background:  #755134;} .oto4l{background:  #E48C34;}
 .inv1l{background:  #8C5862;} .inv2l{background:  #591E3A;} .inv3l{background:  #8C5E54;} .inv4l{background:  #8C5E54;}
-
 .pr1p{background:  #EAEC8D;} .pr2p{background:  #89725B;} .pr3p{background:  #F6E8B1;} .pr4p{background: #B7CA79;}
 .vera1p{background:  #EAEC8D;} .vera2p{background:  #BF6A4B;} .vera3p{background:  #D9C7C1;} .vera4p{background:  #D2BCA6;}
 .oto1p{background:  #213A40;} .oto2p{background:  #FF488B;} .oto3p{background:  #B4E59B;} .oto4p{background:  #BF889D;}
@@ -309,10 +338,6 @@ footer {
 
 
 /*transicion*/
-
-
-
-
 .temporadasT { text-align: center; padding: 3vw 0; color: antiquewhite;
 font-size: 4vw;}
 .stemporadas{background: rgba(0,0,0,0.77);}
@@ -352,7 +377,7 @@ main {
   top              : 0;
   left             : 0;
   width            : 100vw;
-  height           : 100%;
+  height           : 100%;/*revisar en modal avatar*/
   display          : flex;
   background-color : rgba(0,0,0,0.6);
 }
@@ -390,11 +415,14 @@ main {
 	font-size: 5vw;
 	color: antiquewhite;
 }
-
 .ant:hover,.sig:hover { color: #EC6A51; }
 
 
 @media (min-width:768px) and (max-width:992px){
+	/*PARA TABLET MENU*/
+	.menuG{
+		display: none;
+	}
 	/*PARA TABLET TEMPORADAS*/
 	.avatar{
 		width: 25vw;
@@ -427,6 +455,10 @@ main {
 	}
 }
 @media (max-width:767px) {
+	/*PARA MOVIL MENU*/
+	.menuG{
+		display: none;
+	}
 		/*PARA MOVIL TEMPORADAS*/
 	.avatar{
 		width: 80vw;
