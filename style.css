@@ -1,0 +1,467 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+	font-family: 'Abel', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+h1 {font-family: 'Questrial', sans-serif;
+}
+ul {
+	list-style: none;
+}
+ul li h3{font-size: 18px;
+}
+* {
+	box-sizing: border-box;
+}
+/*seccion barraN */
+#barraN{
+	position: absolute;
+}
+.cabezote {
+	position:fixed;
+	top: 30px;
+	z-index: 30;
+	width: 100%;
+	height: 60px;
+	background-color: #77459D;
+}
+.logotipo {
+	position: absolute;
+	z-index: 31;
+	height: 120px;
+	top:0px;
+	left: 30px;
+	display: block;
+}
+/*seccion menuG */
+.menuG ul,.menuG li{
+	margin: 0;
+	padding:0;
+}
+.menuG ul{
+	position: absolute;
+	top:0vw;
+	right: 1vw;
+	list-style: none;
+	width: 100%;
+	z-index: 10;
+}
+.menuG li{
+	width: 120px;
+	float: right;
+	position: relative;
+}
+.menuG a{
+	color:#EEDAEF;
+	display: block;
+	margin: 0;
+	padding:1vh 2vw;
+	text-align: center;
+	text-decoration:none;
+	font-family: 'Abel', sans-serif;
+}
+
+.menuG li:hover a{
+	background:url(titulos/pinceladab.svg)no-repeat  center;
+	background-origin: content-box;
+	background-size: 110px;
+	color:#333366;
+}
+.active {
+	background:url(titulos/pincelada.svg)no-repeat  center;
+	background-origin: content-box;
+	background-size: 110px;
+	color:#333366;
+}
+#submenu{
+	position: absolute;
+	top:0;
+	left: 0;
+	display: none;
+	float: left;
+}
+li:hover #submenu{
+	display: block;
+	top:60px;
+}
+#submenu li{
+	float: none;
+	width: 100%;
+}
+#submenu a:hover{
+	background:#EEDAEF;
+}
+#submenu a{
+	background:grey;
+}
+/*seccion home */
+#home div img{
+	width: 100%;
+	position:relative;
+	box-sizing: border-box;
+	display: block;
+	margin: auto;
+}
+.vint{
+	position: relative;
+	width: 100%;
+
+}
+.vintage{
+	position: absolute;
+	top:0vw;
+	box-sizing: border-box;
+	opacity: 1;
+	transition: .9s ease;
+}
+.vint:hover .vintage{
+	opacity: 0;
+}
+
+/*seccion HOME */
+
+/*seccion QuienSoy */
+#quienSoy {
+	background: white;
+	height: auto;
+	text-align: center;
+}
+.quien{
+	position:relative;
+
+}
+.titulosS{
+	width: 40%;
+	margin:20px 0 0;
+}
+#quienSoy p{
+	text-align: justify;
+	padding: 0 20vw;
+}
+
+
+/*seccion  CALENDARIO D TEMPODADA*/
+
+
+#tableta{
+	justify-content: center;
+}
+.titulo_de_temporada{
+	width: 50%;
+	margin:20px 0 0 20px ;
+}
+.circulo{
+	width:25px; height: 25px;
+	border-radius: 50%;
+	margin: 5px;
+}
+.pr1{background:  #FFB7B8;} .pr2{background:  #69C4FD;} .pr3{background:  #A5FC89;} .pr4{background: #FCF489;}
+.vera1{background:  #FFC6D7;} .vera2{background:  #9BC9FB;} .vera3{background:  #B4FCE6;} .vera4{background:  #B4FCE6;}
+.oto1{background:  #6FFFDE;} .oto2{background:  #FBCB21;} .oto3{background:  #FCA33A;} .oto4{background:  #B4FCE6;}
+.inv1{background:  #EB1450;} .inv2{background:  #0818C3;} .inv3{background:  #02875C;} .inv4{background:  #B4FCE6;}
+
+.pr1l{background:  #F68283;} .pr2l{background:  #DA3F3A;} .pr3l{background:  #8C3D7A;} .pr4l{background: #91BFB4;}
+.vera1l{background:  #E8C285;} .vera2l{background:  #FF918D;} .vera3l{background: #FFC89F;} .vera4l{background:  #FFE393;}
+.oto1l{background:  #BA4947;} .oto2l{background:  #E88251;} .oto3l{background:  #755134;} .oto4l{background:  #E48C34;}
+.inv1l{background:  #8C5862;} .inv2l{background:  #591E3A;} .inv3l{background:  #8C5E54;} .inv4l{background:  #8C5E54;}
+
+.pr1p{background:  #EAEC8D;} .pr2p{background:  #89725B;} .pr3p{background:  #F6E8B1;} .pr4p{background: #B7CA79;}
+.vera1p{background:  #EAEC8D;} .vera2p{background:  #BF6A4B;} .vera3p{background:  #D9C7C1;} .vera4p{background:  #D2BCA6;}
+.oto1p{background:  #213A40;} .oto2p{background:  #FF488B;} .oto3p{background:  #B4E59B;} .oto4p{background:  #BF889D;}
+.inv1p{background:  #C53A4F;} .inv2p{background:  #FCE3D4;} .inv3p{background:  #FCE3D4;} .inv4p{background:  #FFF5E2;}
+.pr1u{background:  #276FB3;} .pr2u{background:  #AC9E21;} .pr3u{background:  #A021B8;} .pr4u{background: #E38F61;}
+.vera1u{background:  #BF6E9B;} .vera2u{background:  #FF008F;} .vera3u{background:  #FFE219;} .vera4u{background:  #14BBCC;}
+.oto1u{background:  #D46F35;} .oto2u{background:  #8A2739;} .oto3u{background:  #F2C958;} .oto4u{background:  #294829;}
+.inv1u{background:  #FFAB1F;} .inv2u{background:  #00B8A3;} .inv3u{background:  #F5002C;} .inv4u{background:  #062029;}
+
+
+/*seccion  grid*/
+.titulo_de_temporada{
+	width: 70%;
+	margin: 30px 9% 0 11%;
+	}
+.grid-container{
+	display: grid;
+	grid-template-columns:repeat(5,150px);
+	grid-template-grows: repeat(5, 100px);
+	justify-items:center;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	grid-gap: 15px;
+	padding: 30px 10px;
+	box-sizing: border-box;
+}
+.item1, .item2, .item3, .item4, .item5, .item10, .item15, .item20{
+	position: relative;
+}
+.item1{
+	grid-column-start: 2;
+	grid-column-end:3;
+}
+
+.iconot {
+	width: 70px;
+}
+.iconoc {
+	position: absolute;
+	top: 0;
+	width: 70px;
+	opacity: 0;
+	transition: .1s ease;
+}
+
+.item1:hover .iconoc, .item2:hover .iconoc, .item3:hover .iconoc, .item4:hover .iconoc, .item5:hover .iconoc, .item10:hover .iconoc, .item15:hover .iconoc, .item20:hover .iconoc{
+	opacity: 1;
+	width: 70px;
+}
+
+.flex-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+/*seccion formulario */
+
+
+#formulario{
+	background-color: whitesmoke;
+}
+fieldset {
+	width: 60vw;
+}
+textarea{
+	width: 40vw;
+	height: 20vh;
+}
+
+/*seccion fotos */
+#fotos{
+	width: 50vw;
+}
+
+/*seccion  temporadas*/
+#temporadas{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	background-color: rgba(0,116,116,0.56);
+	padding-top:10vh;
+	padding-bottom:5vh;
+}
+#temporadas div{
+	
+	text-align: center;
+	margin: 0vw 5vw;
+}
+.avatar {
+	box-sizing: border-box;
+	width: 14vw;
+	border:solid 0.3vw white;
+	border-radius: 50%;
+	
+	/*transicion*/
+	transition:transform .5s;
+}
+.avatar:hover {
+	transform: scale(1.3);
+  	cursor:pointer;
+}
+
+
+/*seccion  footer*/
+footer {
+	width: 100%;
+	background-color: #0D0E0A;
+}
+.contenidoRedes{
+	display: flex;
+	flex-wrap: nowrap;
+	padding:0 5vw;
+	align-items: center;
+	justify-content:center;
+}
+.contenidoRedes a{
+	padding: 3px;
+}
+.contenidoRedes h5{
+	color: #EEDAEF;
+	font-size: 11px;
+	margin-right: 70%;
+}
+.fab {
+	font-size: 25px;
+	color: #EEDAEF;
+	padding: 1vw;
+}
+
+
+/*transicion*/
+
+
+
+
+.temporadasT { text-align: center; padding: 3vw 0; color: antiquewhite;
+font-size: 4vw;}
+.stemporadas{background: rgba(0,0,0,0.77);}
+main {
+  max-width: 800px;
+  width: 100%;
+  min-height: 96vh;
+  margin: 2vh auto;
+}
+.galeria {
+  max-width       : 100%;
+  padding   : 0 0 5vw 0;
+  display         : flex;
+  flex-wrap       : wrap;	
+  justify-content : center;
+}
+
+.item {
+  padding: var(--separa);
+  width: 50%;
+}
+.item img {
+  max-width : 100%;
+  height    : auto;
+  opacity   : 1;
+  outline   : 3px solid #fff;
+}
+.item img:hover {
+  opacity : 0.8;
+  cursor  : pointer;
+}
+.modal {
+  display: none;
+}
+.modal:target {
+  position         : fixed;
+  top              : 0;
+  left             : 0;
+  width            : 100vw;
+  height           : 100%;
+  display          : flex;
+  background-color : rgba(0,0,0,0.6);
+}
+.imagen {
+  margin          : auto;
+  height           : 100%;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+}
+@keyframes zoom {
+  0%   { opacity: 0.2; transform: scale(0.5); }
+  100% { opacity: 1; transform: scale(1);}
+}
+.imagen a { margin: 0 4px; }
+.imagen img {
+  max-width : 100%;
+  width     : 80vw;
+  height    : auto;
+  border    : 8px solid #fff;
+  animation : zoom 0.5s ease-in-out;
+  position  : relative;
+}
+
+.imagen a:nth-child(2) {
+ 	position      : absolute;
+	top           : 2vh;left: 2vw;
+	z-index       : 1;
+	margin 		: auto;
+	height 		: 100%;
+	font-size: 3vw;
+	color: antiquewhite;
+}
+.ant,.sig {
+	font-size: 5vw;
+	color: antiquewhite;
+}
+
+.ant:hover,.sig:hover { color: #EC6A51; }
+
+
+@media (min-width:768px) and (max-width:992px){
+	/*PARA TABLET TEMPORADAS*/
+	.avatar{
+		width: 25vw;
+	}
+	#temporadas div p{
+		font-size: 25px;
+		margin:0 0 70px;
+		padding: 0;
+	}
+	#temporadas div h2{
+		font-size: 40px;
+		margin: 3px;
+	}
+	/*PARA TABLET CALEMDARIO*/
+
+	.circulo{
+	width:40px; height: 40px;
+	margin: 8px;
+	}
+	.iconoc {
+	width: 80px;
+	opacity: 1;
+	}
+	.iconot {
+	width: 80px;
+	}
+	.titulo_de_temporada{
+	width: 80%;
+	margin: 30px 10%;
+	}
+}
+@media (max-width:767px) {
+		/*PARA MOVIL TEMPORADAS*/
+	.avatar{
+		width: 80vw;
+	}
+	#temporadas div p{
+		font-size: 30px;
+		margin:0 0 70px;
+		padding: 0;
+	}
+	#temporadas div h2{
+		font-size: 50px;
+		margin: 3px;
+	}
+		/*PARA MOVIL CALEMDARIO*/
+
+	.circulo{
+	width:35px; height: 35px;
+	margin: 8px;
+	}
+	.iconoc {
+	width: 70px;
+	opacity: 1;
+	}
+	.iconot {
+	width: 70px;
+	}
+	.titulo_de_temporada{
+	width: 80%;
+	margin: 30px 10%;
+	}
+	.grid-container{
+	grid-template-columns:repeat(5,18%);
+	grid-template-grows: repeat(5, 100px);
+	grid-row-gap: 35px;
+	}
+}
+
+ 
