@@ -1,11 +1,13 @@
 <!doctype html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="js.js">
 <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Abel|Questrial" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"> 
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <meta charset="utf-8">
 <title>Vmakeup </title>
@@ -15,42 +17,19 @@
 
 <header id="barraN">
 	
-<img src="img/logo.svg" class="logotipo">
-	<div class="cabezote">
-		<!--
-		<nav class="menuG">
-			<ul>
-				<li><a href="#quiensoy" class="active"><h3>Quién Soy</h3></a></li>
-				<li><a href=""><h3>Temporadas</h3></a>
-					<ul id="submenu">
-						<li><a href="avatar_m1.html"><h3>Verano</h3></a></li>
-						<li><a href="avatar_m1.html"><h3>Otoño</h3></a></li>
-						<li><a href="avatar_m1.html"><h3>Primavera</h3></a></li>
-						<li><a href="avatar_m1.html"><h3>Invierno</h3></a></li>
-					</ul>
-				</li>
-				<li><a href="#galeria"><h3>Galería</h3></a></li>
-				<li><a href="#tutorial"><h3>Tutorial</h3></a></li>
-				
-				<li><a href="#formulario"><h3>contacto</h3></a></li>
-			</ul>
-		</nav>-->
-		<a href="#menu-movil"><i class="fas fa-bars"></i></a>
+
+		<nav class="menug" id="menu-movil">
+		<a><img src="img/logo-20.svg" class="logotipo"></a>
+		  <a href="#quiensoy" class="active">Quién Soy</a>
+		  <a href="#temporadas">Temporadas</a>
+		  <a href="#tutorial">Video</a>
+		  <a href="#formulario">Contacto</a>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		  </a>
+</nav>
 	
-			<nav id="menu-movil">
-				<ul>
-				<li><a href="#quiensoy" class="active"><h3>Quién Soy</h3></a></li>
-				<li><a href="#temporadas"><h3>Temporadas</h3></a></li>
-				<li><a href="#galeria"><h3>Galería</h3></a></li>
-				<li><a href="#tutorial"><h3>Tutorial</h3></a></li>
-				
-				<li><a href="#formulario"><h3>contacto</h3></a></li>
-			</ul>
-		   </nav>
-	</div>
-	
-		
-	
+			
 </header>
 
 <section id="home">
@@ -65,32 +44,32 @@
 <section id="quienSoy">
 <div class="quien">
 	<img src="titulos/quien_soy.svg" class="titulosS">
-	<p>estacado de la Web
-	Resultado de imagen para quien soy
-	Saber “quién soy yo” puede no ser siempre fácil. Y para algunos individuos se convierte en una pregunta complicada, pues les da miedo afrontar la realidad. Cuando no sabes quién eres, ni dónde estás, ni sabes el camino que quieres seguir en la vida, la ansiedad, el malestar y el miedo pueden tomar el control.</p>
+	<p>Soy Valentina López profesional en cine y televisión, con desempeño en
+direccion de arte, productos audiovisuales, asistencia de archivo digital,
+maquillaje artistico, con creatividad, diseño, armonía de colores. Soy una persona dedicada a mis labores y responsable.</p>
 </div>
 </section>
-<!---->
+
 <section id="temporadas">
 	<div>
-		<a href=""><img  class="avatar" src="img/avatar-modelos_m1.png"></a>
+		<a href="otono.html"><img  class="avatar" src="img/avatar-modelos-4.png"></a>
 		<h2>Otoño</h2>
-		<p>descripción,<br> temporada otoño</p>
+		<p>Cuando a las seis veas <br>oscurecer,el otoño seguro es.</p>
 	</div>
 	<div>
-		<a href=""><img  class="avatar" src="img/avatar-modelos-e.png"></a>
+		<a href="verano.html"><img  class="avatar" src="img/avatar-modelos-e.png"></a>
 		<h2>Verano</h2>
-		<p>descripción,<br> temporada verano</p>
+		<p>Celebra el verano, días soleados<br> y noches estrelladas.</p>
 	</div>
 	<div>
-		<a href=""><img  class="avatar" src="img/avatar-modelos_i.png"></a>
+		<a href="primavera.html"><img  class="avatar" src="img/avatar-modelos_i.png"></a>
 		<h2>Primavera</h2>
-		<p>descripción,<br> temporada Primavera</p>
+		<p>Que cante o que llore,<br>no viene nunca sin flores.</p>
 	</div>
 	<div>
-		<a href=""><img  class="avatar" src="img/avatar-modelos-4.png"></a>
+		<a href="invierno.html"><img  class="avatar" src="img/avatar-modelos_m1.png"></a>
 		<h2>Invierno</h2>
-		<p>descripción,<br> temporada Invierno</p>
+		<p>Este invierno lo combato con <br>mucho color, temporada Invierno.</p>
 	</div>
 </section>
 
@@ -233,63 +212,27 @@
 	  
 
 	</div>
-	<!--<table>
-  <tr>
-        
-        <th>Estaciones del año</th>
-        <th>Tendencias 2019</th>
-        
-   </tr>
-    <tr>
-        
-        <td>Primavera</td>
-		<td >
-			<div class="circulo pr1"></div>
-			<div class="circulo pr2"></div>
-     		<div class="circulo pr3"></div>
-      	</td>
-       
-        
-    </tr>
-  <tr>
-        
-        <td >Verano</td>
-        <td >
-        	<div class="circulo vera1"></div>
-     		<div class="circulo vera2"></div>
-     		<div class="circulo vera3"></div>
-        </td>
-        
-  </tr>
-    <tr>
-        
-        <td >otoño</td>
-        <td >
-        	<div class="circulo oto1"></div>
-     		<div class="circulo oto2"></div>
-     		<div class="circulo oto3"></div>
-        </td>
-        
-    </tr>
-    <tr>
-        
-        <td >Invierno</td>
-        <td >
-        	<div class="circulo inv1"></div>
-     		<div class="circulo inv2"></div>
-     		<div class="circulo inv3"></div>
-        </td>
-        
-    </tr>
-    
-</table>	-->
 </section>
+
 <section id="tutorial">
-	<iframe width="533" height="260" src="https://www.youtube.com/embed/QfhqUgC2nM0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<div class="cajavideo">
+		<div><iframe  src="https://www.youtube.com/embed/g0lsv60Ei9E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen controls="none"></iframe></div>
+		
+		<div class="desparrafo">
+		<h2>Tu piel merece lo mejor</h2>
+			<p>
+				Seduce todo el día con la nueva base de cuidado de la piel Dior Forever 24h high perfection. La primera base de perfección completa de longwear con hidratación que cuida la piel. Amarás tu piel para siempre.
+			</p>
+			
+		</div>
+			
+		
+	</div>
 </section>
 
 <section id="formulario">
-	<form action="/action_page.php">
+	<div>
+		<form action="/action_page.php">
     <fieldset>
        <legend><h1>CONTACTO</h1></legend>
         Nombre <br>
@@ -297,7 +240,7 @@
         Email <br>
         <input type="email" name="correo" value="@ejemplo"> <br>
         Teléfono <br>
-        <input type="number" name="Teléfono"> <br>
+        <input type="text" name="Teléfono"> <br>
         Mensaje <br>
         <textarea name="mensaje"> </textarea><br>
         <br>
@@ -305,17 +248,43 @@
 
     </fieldset>
 </form>
+	</div>
+	
 </section> 
 
 <footer>
 	<section class="contenidoRedes row">
 	<h5 class="tlegal">copyright@ 2019</h5>
 		<a href="https://www.instagram.com/vmakeup92/" target="_blank"><i class="fab fa-instagram"></i></a>
-		<a href="https://www.instagram.com/vmakeup92/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-		<a href="https://www.instagram.com/vmakeup92/" target="_blank">
-			<i class="fab fa-linkedin-in"></i>
-	</a>
+		<a href="https://www.facebook.com/valentina.lopez.5686?ref=br_tf&epa=SEARCH_BOX" target="_blank"><i class="fab fa-facebook-square"></i></a>
+		
 	</section>
 </footer>
+
+
+<a href="#barraN" rel="address:/home" class="volver">
+     <i class="fas fa-arrow-circle-up"></i></a>
+     
+<script>
+function myFunction() {
+  var x = document.getElementById("menu-movil");
+  if (x.className === "menug") {
+    x.className += " responsive";
+  } else {
+    x.className = "menug";
+  }
+}
+
+$(document).ready(function() {
+ $(window).scroll(function() {
+   if ($(document).scrollTop() > 50) {
+     $(".fa-arrow-circle-up").addClass("test");
+   } else {
+     $(".fa-arrow-circle-up").removeClass("test");
+   }
+	 });
+	});
+
+</script>
 </body>
 </html>

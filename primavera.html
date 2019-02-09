@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="js.js">
+<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Abel|Questrial" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<meta charset="utf-8">
+<title>Temporada de Primavera</title>
+</head>
+
+<body>
+<header id="barraN">
+	
+
+		<nav class="menug" id="menu-movil">
+		<a><img src="img/logo-20.svg" class="logotipo"></a>
+		  <a href="index.html" >Home</a>
+		  <a href="otono.html" >Otoño</a>
+		  <a href="verano.html" >Verano</a>
+		  <a href="" class="active">Primavera</a>
+		  <a href="invierno.html" >Invierno</a>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		  </a>
+		</nav>
+	
+			
+</header>
+
+<section class="stemporadas">
+<main>
+  <h1 class="temporadasT">Primavera</h1>
+  <div class="galeria">
+    <div class="item"><a href="#img1"><img src="img/fotos_pr/foto_pr1.jpg"></a></div>
+    <div class="item"><a href="#img2"><img src="img/fotos_pr/foto_pr2.jpg"></a></div>
+    <div class="item"><a href="#img3"><img src="img/fotos_pr/foto_pr3.jpg"></a></div>
+    <div class="item"><a href="#img4"><img src="img/fotos_pr/foto_pr4.jpg"></a></div>
+  </div>
+  
+  <div class="modal" id="img1">
+    <div class="imagen">
+      <a class="ant" href="#img4"><i class="fas fa-angle-left"></i></a>
+      <a href="" title="cerrar"><i class="fas fa-times"></i></a><img src="img/fotos_pr/foto_pr1.jpg">
+      <a class="sig" href="#img2"><i class="fas fa-angle-right"></i></a>
+    </div>
+  </div>
+  <div class="modal" id="img2">
+    <div class="imagen">
+      <a class="ant" href="#img1"><i class="fas fa-angle-left"></i></a>
+      <a href="" title="cerrar"><i class="fas fa-times"></i></a><img src="img/fotos_pr/foto_pr2.jpg">
+      <a class="sig" href="#img3"><i class="fas fa-angle-right"></i></a>
+    </div>
+  </div>
+  <div class="modal" id="img3">
+    <div class="imagen">
+      <a class="ant" href="#img2"><i class="fas fa-angle-left"></i></a>
+      <a href="" title="cerrar"><i class="fas fa-times"></i></a><img src="img/fotos_pr/foto_pr3.jpg">
+      <a class="sig" href="#img4"><i class="fas fa-angle-right"></i></a>
+    </div>
+  </div>
+  <div class="modal" id="img4">
+    <div class="imagen">
+      <a class="ant" href="#img3"><i class="fas fa-angle-left"></i></a>
+      <a href="" title="cerrar"><i class="fas fa-times"></i></a><img src="img/fotos_pr/foto_pr4.jpg">
+      <a class="sig" href="#img1"><i class="fas fa-angle-right"></i></a>
+    </div>
+  </div>    
+	</main>
+</section>
+
+<footer>
+	<section class="contenidoRedes row">
+	<h5 class="tlegal">copyright@ 2019</h5>
+		<a href="https://www.instagram.com/vmakeup92/" target="_blank"><i class="fab fa-instagram"></i></a>
+		<a href="https://www.facebook.com/valentina.lopez.5686?ref=br_tf&epa=SEARCH_BOX" target="_blank"><i class="fab fa-facebook-square"></i></a>
+		
+	</section>
+</footer>
+<script>
+function myFunction() {
+  var x = document.getElementById("menu-movil");
+  if (x.className === "menug") {
+    x.className += " responsive";
+  } else {
+    x.className = "menug";
+  }
+}
+</script>
+</body>
+</html>
