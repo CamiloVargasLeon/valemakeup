@@ -22,6 +22,9 @@ ul li h3{font-size: 18px;
 * {
 	box-sizing: border-box;
 }
+.contenedor{margin: auto;width: 100%}
+
+
 /*BOTTON REGRESAR*/
 .fa-arrow-circle-up {
 	display: none;
@@ -39,6 +42,10 @@ ul li h3{font-size: 18px;
 	opacity: 1;
 	transition: .9s ease;
 }
+/*menu*/
+#barraN{
+	background-color: #77459D;
+}
 .logotipo {
 	
 	
@@ -50,7 +57,6 @@ ul li h3{font-size: 18px;
 }
 .menug {
   overflow: hidden;
-  background-color: #77459D;
 }
 
 .menug a {
@@ -64,7 +70,6 @@ ul li h3{font-size: 18px;
 	font-family: 'Abel', sans-serif;
 	margin: 0;
 }
-
 
 .menug a:hover {
   background:#EEDAEF;
@@ -82,6 +87,9 @@ ul li h3{font-size: 18px;
   display: none;
 }
 /*seccion HOME */
+#home {
+	background: black;
+}
 #home div img{
 	width: 100%;
 	position:relative;
@@ -89,7 +97,6 @@ ul li h3{font-size: 18px;
 	display: block;
 	margin: auto;
 }
-
 
 /*perfil*/
 .vint{
@@ -127,24 +134,23 @@ ul li h3{font-size: 18px;
 }
 
 /*seccion  temporadas*/
-
-#temporadas{
+#temporadas{background: rgba(0,116,116,0.56);}
+.estaciones{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
-	background-color: rgba(0,116,116,0.56);
 	padding-top:10vh;
 	padding-bottom:5vh;
 	width: 100%;
 	box-sizing: border-box;
 }
 
-#temporadas div{
+.estaciones div{
 	
 	text-align: center;
-	margin: 1vw 2vw;
+	margin: 1vw 1vw;
 }
 .avatar {
 	box-sizing: border-box;
@@ -156,7 +162,7 @@ ul li h3{font-size: 18px;
 	transition:transform .5s;
 }
 .avatar:hover {
-	transform: scale(1.3);
+	transform: scale(1.2);
   	cursor:pointer;
 }
 /*seccion  CALENDARIO D TEMPODADA*/
@@ -392,7 +398,11 @@ main {
 }
 .ant:hover,.sig:hover { color: #00A99D; }
 
-
+@media (min-width:1400px){
+	.contenedor{
+	width: 80%;
+	}
+}
 @media (min-width:768px) and (max-width: 992px){
 	/*PARA TABLET MENU*/
 		.menug a:not(:first-child) {display: none;}
